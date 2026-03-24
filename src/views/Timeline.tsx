@@ -1,5 +1,5 @@
-import React from 'react'
-import { useTaskStore } from '../store/useTaskStore'
+
+
 import type { Task } from '../store/useTaskStore';
 
 export default function Timeline( {tasks}:{tasks:Task[]}) {

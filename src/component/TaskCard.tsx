@@ -2,8 +2,8 @@ import { useRef } from "react";
 import { useTaskStore } from "../store/useTaskStore";
 import type { Task } from "../store/useTaskStore";
 
-export default function TaskCard({task,users=[]}: {task : Task;
-    users?:[]
+export default function TaskCard({task,}: {task : Task;
+   
 }){
     const setDraggingTask= useTaskStore ((s)=> s.setDraggingTask);
     const draggingTaskId= useTaskStore((s) => s.draggingTaskId);

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import  { useRef, useState } from 'react'
 import { useTaskStore } from '../store/useTaskStore'
 import type {Task} from "../store/useTaskStore"
 export default function List({tasks} : {tasks:Task[]}) {

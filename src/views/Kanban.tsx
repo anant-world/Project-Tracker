@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { useTaskStore } from '../store/useTaskStore'
 import TaskCard from '../component/TaskCard';
 import type{Task} from "../store/useTaskStore";
@@ -6,8 +6,8 @@ const columns=["todo","in-progress","review","done"];
 
 
 
-export default function Kanban({tasks,users} : {tasks : Task[]
-    users:{id:number ; name:string; taskId:string} [];
+export default function Kanban({tasks,} : {tasks : Task[]
+
 }) {
    
     const updateTask= useTaskStore((s) => s.updateTask)

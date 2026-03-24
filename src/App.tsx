@@ -17,26 +17,7 @@ function App() {
   assignee:[] as string[],
  })
 
- const [activeUsers, setActiveUsers] = useState([
-  {id:1, name:"A",taskId:""},
-  {id:2,name:"B",taskId:""},
-  {id:3,name:"C" , taskId:""}
- ]);
-
- useEffect(() => {
-  if (tasks.length === 0) return;
-
-  const interval = setInterval(() => {
-    setActiveUsers((prev) =>
-      prev.map((u) => ({
-        ...u,
-        taskId: tasks[Math.floor(Math.random() * tasks.length)]?.id,
-      }))
-    );
-  }, 2000);
-
-  return () => clearInterval(interval);
-}, [tasks]);
+ 
 
  useEffect(()=>{
   const params= new URLSearchParams(window.location.search);
@@ -90,7 +71,7 @@ function App() {
           ))}
         </div>
 
-        {view === "kanban" && <Kanban tasks={filteredTasks} users={activeUsers}/>}
+        {view === "kanban" && <Kanban tasks={filteredTasks} />}
         {view === "list" && <List tasks={filteredTasks}/>}
         {view === "timeline" && <Timeline tasks={filteredTasks}/>}
 
