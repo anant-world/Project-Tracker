@@ -10,7 +10,7 @@ https://trackyyy.netlify.app/?
 
 ## Features
 
-### 🧩 1. Multi-View Architecture
+###  1. Multi-View Architecture
 
 * **Kanban Board**
 
@@ -138,7 +138,7 @@ npm run dev
 
 ---
 
-## 🚀 Build & Deploy
+##  Build & Deploy
 
 ```bash
 npm run build
@@ -151,7 +151,7 @@ Deploy using:
 
 ---
 
-## 🧪 Performance
+##  Performance
 
 * Virtual scrolling ensures minimal DOM nodes
 * Smooth scrolling for large datasets
@@ -161,7 +161,7 @@ Deploy using:
 
 ## key Implementation Details
 
-### 🔹 Drag & Drop
+###  Drag & Drop
 
 * Implemented using pointer events
 * Clone element used for drag preview
@@ -182,7 +182,7 @@ Deploy using:
 
 ---
 
-### 🔹 State Management (Zustand)
+###  State Management (Zustand)
 
 * Lightweight and minimal boilerplate
 * Efficient for shared state across multiple views
